@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sliding Puzzle Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <h1>Sliding Puzzle Game</h1>
+      <p>Select the board size and click "New Game" to start.</p>
+      <label for="size">Board Size:</label>
+      <input type="number" id="row" value="3" min="3" max="10" />
+      <input type="number" id="col" value="3" min="3" max="10" />
+
+      <button onclick="newGame(row.value , col.value)">New Game</button>
+    </section>
+    <div id="board"></div>
+
+    <div class="message__wrapper">
+
+    <div id="message">
+    </div>
+
+  </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
